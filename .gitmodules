@@ -7,3 +7,9 @@
 [submodule "SparkFun-KiCad-Libraries"]
 	path = SparkFun-KiCad-Libraries
 	url = https://github.com/sparkfun/SparkFun-KiCad-Libraries.git
+[submodule "digikey-kicad-library"]
+	path = digikey-kicad-library
+	url = https://github.com/Digi-Key/digikey-kicad-library.git
+[submodule "kicad_lib_tmk"]
+	path = kicad_lib_tmk
+	url = https://github.com/tmk/kicad_lib_tmk.git

@@ -1,4 +1,6 @@
 (sym_lib_table
-  (lib (name MX_Alps_Hybrid)(type Legacy)(uri "/Users/josh/Documents/keebs/kicad/MX_Alps_Hybrid/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr ""))
-  (lib (name random-keyboard-parts)(type Legacy)(uri "/Users/josh/Documents/keebs/kicad/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
+  (lib (name MX_Alps_Hybrid)(type Legacy)(uri "/Users/josh/Documents/keebs/kicad/MX_Alps_Hybrid/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr "")(disabled))
+  (lib (name random-keyboard-parts)(type Legacy)(uri "/Users/josh/Documents/keebs/kicad/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr "")(disabled))
+  (lib (name keyboard_parts)(type Legacy)(uri /Users/josh/Documents/keebs/kicad/kicad_lib_tmk/keyboard_parts.lib)(options "")(descr ""))
+  (lib (name mkl27z256vfm4)(type Legacy)(uri /Users/josh/Documents/keebs/kicad/kicad_lib_tmk/mkl27z256vfm4.lib)(options "")(descr ""))
 )
