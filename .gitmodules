@@ -19,3 +19,12 @@
 [submodule "keebs.pretty"]
 	path = keebs.pretty
 	url = https://github.com/egladman/keebs.pretty.git
+[submodule "arduino-kicad-library"]
+	path = arduino-kicad-library
+	url = https://github.com/Alarm-Siren/arduino-kicad-library.git
+[submodule "Nano_33"]
+	path = Nano_33
+	url = https://github.com/hulkco/Nano_33.git
+[submodule "kicad-footprints"]
+	path = kicad-footprints
+	url = https://gitlab.com/kicad/libraries/kicad-footprints.git
