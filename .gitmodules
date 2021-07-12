@@ -15,7 +15,7 @@
 	url = https://github.com/tmk/kicad_lib_tmk.git
 [submodule "keyboard_parts.pretty"]
 	path = keyboard_parts.pretty
-	url = https://github.com/tmk/keyboard_parts.pretty.git
+	url = https://github.com/colemarkham/keyboard_parts.pretty.git
 [submodule "keebs.pretty"]
 	path = keebs.pretty
 	url = https://github.com/egladman/keebs.pretty.git
@@ -28,3 +28,18 @@
 [submodule "kicad-footprints"]
 	path = kicad-footprints
 	url = https://gitlab.com/kicad/libraries/kicad-footprints.git
+[submodule "kicad-symbols"]
+	path = kicad-symbols
+	url = https://gitlab.com/kicad/libraries/kicad-symbols.git
+[submodule "Keebio-Parts.pretty"]
+	path = Keebio-Parts.pretty
+	url = https://github.com/keebio/Keebio-Parts.pretty.git
+[submodule "keebio-components"]
+	path = keebio-components
+	url = https://github.com/keebio/keebio-components.git
+[submodule "keyswitch-kicad-library"]
+	path = keyswitch-kicad-library
+	url = https://github.com/perigoso/keyswitch-kicad-library.git
+[submodule "kicad-libraries"]
+	path = kicad-libraries
+	url = https://github.com/sszczep/kicad-libraries.git

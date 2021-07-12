@@ -1,0 +1,1630 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1350 1250 0    50   Input ~ 0
+LSCL
+$Comp
+L keyboard_parts:R R1
+U 1 1 60EB1D57
+P 1875 1300
+F 0 "R1" V 2083 1300 50  0000 C CNN
+F 1 "4.7k" V 1992 1300 50  0000 C CNN
+F 2 "Keebio-Parts:Resistor" H 1875 1300 60  0001 C CNN
+F 3 "" H 1875 1300 60  0000 C CNN
+	1    1875 1300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1350 1450 0    50   Input ~ 0
+LSDA
+$Comp
+L keyboard_parts:R R2
+U 1 1 60EBB36B
+P 1875 1400
+F 0 "R2" V 1759 1400 50  0000 C CNN
+F 1 "4.7k" V 1668 1400 50  0000 C CNN
+F 2 "Keebio-Parts:Resistor" H 1875 1400 60  0001 C CNN
+F 3 "" H 1875 1400 60  0000 C CNN
+	1    1875 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2275 1350 1350 1350
+Wire Wire Line
+	2275 1450 1350 1450
+Wire Wire Line
+	2275 1450 2275 1400
+Wire Wire Line
+	2275 1400 2125 1400
+Wire Wire Line
+	1625 1400 1350 1400
+Wire Wire Line
+	1350 1400 1350 1350
+Connection ~ 1350 1350
+Wire Wire Line
+	2275 1250 1350 1250
+Wire Wire Line
+	1625 1300 1350 1300
+Wire Wire Line
+	1350 1300 1350 1350
+Wire Wire Line
+	2125 1300 2275 1300
+Wire Wire Line
+	2275 1300 2275 1250
+Connection ~ 2275 1450
+Connection ~ 2275 1250
+$Comp
+L keebio:TRRS U1
+U 1 1 60EAE1F0
+P 2625 1650
+F 0 "U1" H 2853 1953 60  0000 L CNN
+F 1 "TRRS" H 2853 1847 60  0000 L CNN
+F 2 "Keebio-Parts:TRRS-PJ-320D" H 2775 1650 60  0001 C CNN
+F 3 "" H 2775 1650 60  0001 C CNN
+	1    2625 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:GND #GND0102
+U 1 1 60EDCF95
+P 2275 1550
+F 0 "#GND0102" H 2325 1500 45  0001 L BNN
+F 1 "GND" H 2275 1380 45  0000 C CNN
+F 2 "" H 2275 1450 60  0001 C CNN
+F 3 "" H 2275 1450 60  0001 C CNN
+	1    2275 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:5V #SUPPLY0102
+U 1 1 60EDD8DC
+P 1075 1325
+F 0 "#SUPPLY0102" H 1125 1325 45  0001 L BNN
+F 1 "5V" H 1075 1601 45  0000 C CNN
+F 2 "XXX-00000" H 1075 1506 60  0000 C CNN
+F 3 "" H 1075 1325 60  0001 C CNN
+	1    1075 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1350 1075 1350
+Wire Wire Line
+	1075 1350 1075 1325
+Text GLabel 950  2900 0    50   Input ~ 0
+LSCL
+Wire Wire Line
+	2350 2700 2400 2700
+NoConn ~ 2350 2400
+NoConn ~ 2350 2800
+NoConn ~ 950  3500
+NoConn ~ 950  3100
+NoConn ~ 950  2600
+$Comp
+L SparkFun-PowerSymbols:5V #SUPPLY0101
+U 1 1 60ED995D
+P 2400 2700
+F 0 "#SUPPLY0101" H 2450 2700 45  0001 L BNN
+F 1 "5V" V 2347 2828 45  0000 L CNN
+F 2 "XXX-00000" V 2442 2828 60  0000 L CNN
+F 3 "" H 2400 2700 60  0001 C CNN
+	1    2400 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:GND #GND0104
+U 1 1 60EE852B
+P 2350 2500
+F 0 "#GND0104" H 2400 2450 45  0001 L BNN
+F 1 "GND" V 2350 2372 45  0000 R CNN
+F 2 "" H 2350 2400 60  0001 C CNN
+F 3 "" H 2350 2400 60  0001 C CNN
+	1    2350 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CherryMX:CherryMX SW1
+U 1 1 60F02B5C
+P 3425 1450
+F 0 "SW1" H 3425 1735 50  0000 C CNN
+F 1 "CherryMX" H 3425 1644 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3425 1475 50  0001 C CNN
+F 3 "" H 3425 1475 50  0001 C CNN
+	1    3425 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW2
+U 1 1 60F06C1F
+P 3425 1900
+F 0 "SW2" H 3425 2185 50  0000 C CNN
+F 1 "CherryMX" H 3425 2094 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.25u_PCB" H 3425 1925 50  0001 C CNN
+F 3 "" H 3425 1925 50  0001 C CNN
+	1    3425 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW3
+U 1 1 60F081B3
+P 3425 2325
+F 0 "SW3" H 3425 2610 50  0000 C CNN
+F 1 "CherryMX" H 3425 2519 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.75u_PCB" H 3425 2350 50  0001 C CNN
+F 3 "" H 3425 2350 50  0001 C CNN
+	1    3425 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW4
+U 1 1 60F08AB8
+P 3425 2775
+F 0 "SW4" H 3425 3060 50  0000 C CNN
+F 1 "CherryMX" H 3425 2969 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.25u_PCB" H 3425 2800 50  0001 C CNN
+F 3 "" H 3425 2800 50  0001 C CNN
+	1    3425 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW5
+U 1 1 60F0F99C
+P 3975 1450
+F 0 "SW5" H 3975 1735 50  0000 C CNN
+F 1 "CherryMX" H 3975 1644 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3975 1475 50  0001 C CNN
+F 3 "" H 3975 1475 50  0001 C CNN
+	1    3975 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW6
+U 1 1 60F0F9A6
+P 3975 1900
+F 0 "SW6" H 3975 2185 50  0000 C CNN
+F 1 "CherryMX" H 3975 2094 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3975 1925 50  0001 C CNN
+F 3 "" H 3975 1925 50  0001 C CNN
+	1    3975 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW7
+U 1 1 60F0F9B0
+P 3975 2325
+F 0 "SW7" H 3975 2610 50  0000 C CNN
+F 1 "CherryMX" H 3975 2519 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3975 2350 50  0001 C CNN
+F 3 "" H 3975 2350 50  0001 C CNN
+	1    3975 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW8
+U 1 1 60F0F9BA
+P 3975 2775
+F 0 "SW8" H 3975 3060 50  0000 C CNN
+F 1 "CherryMX" H 3975 2969 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.50u_PCB" H 3975 2800 50  0001 C CNN
+F 3 "" H 3975 2800 50  0001 C CNN
+	1    3975 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW9
+U 1 1 60F15D90
+P 4525 1450
+F 0 "SW9" H 4525 1735 50  0000 C CNN
+F 1 "CherryMX" H 4525 1644 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 4525 1475 50  0001 C CNN
+F 3 "" H 4525 1475 50  0001 C CNN
+	1    4525 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW10
+U 1 1 60F15D9A
+P 4525 1900
+F 0 "SW10" H 4525 2185 50  0000 C CNN
+F 1 "CherryMX" H 4525 2094 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 4525 1925 50  0001 C CNN
+F 3 "" H 4525 1925 50  0001 C CNN
+	1    4525 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW11
+U 1 1 60F15DA4
+P 4525 2325
+F 0 "SW11" H 4525 2610 50  0000 C CNN
+F 1 "CherryMX" H 4525 2519 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 4525 2350 50  0001 C CNN
+F 3 "" H 4525 2350 50  0001 C CNN
+	1    4525 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW12
+U 1 1 60F19E4C
+P 5075 1450
+F 0 "SW12" H 5075 1735 50  0000 C CNN
+F 1 "CherryMX" H 5075 1644 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5075 1475 50  0001 C CNN
+F 3 "" H 5075 1475 50  0001 C CNN
+	1    5075 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW13
+U 1 1 60F19E56
+P 5075 1900
+F 0 "SW13" H 5075 2185 50  0000 C CNN
+F 1 "CherryMX" H 5075 2094 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5075 1925 50  0001 C CNN
+F 3 "" H 5075 1925 50  0001 C CNN
+	1    5075 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW14
+U 1 1 60F19E60
+P 5075 2325
+F 0 "SW14" H 5075 2610 50  0000 C CNN
+F 1 "CherryMX" H 5075 2519 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5075 2350 50  0001 C CNN
+F 3 "" H 5075 2350 50  0001 C CNN
+	1    5075 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW15
+U 1 1 60F1CF48
+P 5600 1450
+F 0 "SW15" H 5600 1735 50  0000 C CNN
+F 1 "CherryMX" H 5600 1644 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5600 1475 50  0001 C CNN
+F 3 "" H 5600 1475 50  0001 C CNN
+	1    5600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW16
+U 1 1 60F1CF52
+P 5600 1900
+F 0 "SW16" H 5600 2185 50  0000 C CNN
+F 1 "CherryMX" H 5600 2094 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5600 1925 50  0001 C CNN
+F 3 "" H 5600 1925 50  0001 C CNN
+	1    5600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW17
+U 1 1 60F1CF5C
+P 5600 2325
+F 0 "SW17" H 5600 2610 50  0000 C CNN
+F 1 "CherryMX" H 5600 2519 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5600 2350 50  0001 C CNN
+F 3 "" H 5600 2350 50  0001 C CNN
+	1    5600 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW18
+U 1 1 60F1CF66
+P 4525 2775
+F 0 "SW18" H 4525 3060 50  0000 C CNN
+F 1 "CherryMX" H 4525 2969 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.25u_PCB" H 4525 2800 50  0001 C CNN
+F 3 "" H 4525 2800 50  0001 C CNN
+	1    4525 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW19
+U 1 1 60F1F9BE
+P 6150 1450
+F 0 "SW19" H 6150 1735 50  0000 C CNN
+F 1 "CherryMX" H 6150 1644 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 6150 1475 50  0001 C CNN
+F 3 "" H 6150 1475 50  0001 C CNN
+	1    6150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW20
+U 1 1 60F1F9C8
+P 6150 1900
+F 0 "SW20" H 6150 2185 50  0000 C CNN
+F 1 "CherryMX" H 6150 2094 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 6150 1925 50  0001 C CNN
+F 3 "" H 6150 1925 50  0001 C CNN
+	1    6150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW21
+U 1 1 60F1F9D2
+P 6150 2325
+F 0 "SW21" H 6150 2610 50  0000 C CNN
+F 1 "CherryMX" H 6150 2519 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 6150 2350 50  0001 C CNN
+F 3 "" H 6150 2350 50  0001 C CNN
+	1    6150 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW22
+U 1 1 60F1F9DC
+P 6150 2775
+F 0 "SW22" H 6150 3060 50  0000 C CNN
+F 1 "CherryMX" H 6150 2969 50  0000 C CNN
+F 2 "CherryMX_PCB_StabWireBottom:CherryMX_2.25u_PCB_StabWireBottom" H 6150 2800 50  0001 C CNN
+F 3 "" H 6150 2800 50  0001 C CNN
+	1    6150 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D1
+U 1 1 60F272EB
+P 3625 1600
+F 0 "D1" H 3497 1550 60  0000 R CNN
+F 1 "D" V 3775 1550 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 3625 1600 60  0001 C CNN
+F 3 "" H 3625 1600 60  0000 C CNN
+	1    3625 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D2
+U 1 1 60F283DB
+P 3625 2050
+F 0 "D2" H 3497 2000 60  0000 R CNN
+F 1 "D" V 3775 2000 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 3625 2050 60  0001 C CNN
+F 3 "" H 3625 2050 60  0000 C CNN
+	1    3625 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D3
+U 1 1 60F28ECD
+P 3625 2475
+F 0 "D3" H 3497 2425 60  0000 R CNN
+F 1 "D" V 3775 2425 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 3625 2475 60  0001 C CNN
+F 3 "" H 3625 2475 60  0000 C CNN
+	1    3625 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D4
+U 1 1 60F29906
+P 3625 2925
+F 0 "D4" H 3497 2875 60  0000 R CNN
+F 1 "D" V 3775 2875 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 3625 2925 60  0001 C CNN
+F 3 "" H 3625 2925 60  0000 C CNN
+	1    3625 2925
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D5
+U 1 1 60F2A242
+P 4175 1600
+F 0 "D5" H 4047 1550 60  0000 R CNN
+F 1 "D" V 4325 1550 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4175 1600 60  0001 C CNN
+F 3 "" H 4175 1600 60  0000 C CNN
+	1    4175 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D6
+U 1 1 60F2AD55
+P 4175 2050
+F 0 "D6" H 4047 2000 60  0000 R CNN
+F 1 "D" V 4325 2000 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4175 2050 60  0001 C CNN
+F 3 "" H 4175 2050 60  0000 C CNN
+	1    4175 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D7
+U 1 1 60F2B52E
+P 4175 2475
+F 0 "D7" H 4047 2425 60  0000 R CNN
+F 1 "D" V 4325 2425 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4175 2475 60  0001 C CNN
+F 3 "" H 4175 2475 60  0000 C CNN
+	1    4175 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D8
+U 1 1 60F2C0E5
+P 4175 2925
+F 0 "D8" H 4047 2875 60  0000 R CNN
+F 1 "D" V 4325 2875 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4175 2925 60  0001 C CNN
+F 3 "" H 4175 2925 60  0000 C CNN
+	1    4175 2925
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D9
+U 1 1 60F2CB34
+P 4725 1600
+F 0 "D9" H 4597 1550 60  0000 R CNN
+F 1 "D" V 4875 1550 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4725 1600 60  0001 C CNN
+F 3 "" H 4725 1600 60  0000 C CNN
+	1    4725 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D10
+U 1 1 60F2D1C8
+P 4725 2050
+F 0 "D10" H 4597 2000 60  0000 R CNN
+F 1 "D" V 4875 2000 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4725 2050 60  0001 C CNN
+F 3 "" H 4725 2050 60  0000 C CNN
+	1    4725 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D11
+U 1 1 60F2D70F
+P 4725 2475
+F 0 "D11" H 4597 2425 60  0000 R CNN
+F 1 "D" V 4875 2425 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4725 2475 60  0001 C CNN
+F 3 "" H 4725 2475 60  0000 C CNN
+	1    4725 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D12
+U 1 1 60F2E34F
+P 5275 1600
+F 0 "D12" H 5147 1550 60  0000 R CNN
+F 1 "D" V 5425 1550 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5275 1600 60  0001 C CNN
+F 3 "" H 5275 1600 60  0000 C CNN
+	1    5275 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D13
+U 1 1 60F2F38B
+P 5275 2050
+F 0 "D13" H 5147 2000 60  0000 R CNN
+F 1 "D" V 5425 2000 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5275 2050 60  0001 C CNN
+F 3 "" H 5275 2050 60  0000 C CNN
+	1    5275 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D14
+U 1 1 60F2FDB4
+P 5275 2475
+F 0 "D14" H 5147 2425 60  0000 R CNN
+F 1 "D" V 5425 2425 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5275 2475 60  0001 C CNN
+F 3 "" H 5275 2475 60  0000 C CNN
+	1    5275 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D15
+U 1 1 60F305FE
+P 5800 1600
+F 0 "D15" H 5672 1550 60  0000 R CNN
+F 1 "D" V 5950 1550 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5800 1600 60  0001 C CNN
+F 3 "" H 5800 1600 60  0000 C CNN
+	1    5800 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D16
+U 1 1 60F314B4
+P 5800 2050
+F 0 "D16" H 5672 2000 60  0000 R CNN
+F 1 "D" V 5950 2000 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5800 2050 60  0001 C CNN
+F 3 "" H 5800 2050 60  0000 C CNN
+	1    5800 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D17
+U 1 1 60F31C3D
+P 5800 2475
+F 0 "D17" H 5672 2425 60  0000 R CNN
+F 1 "D" V 5950 2425 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5800 2475 60  0001 C CNN
+F 3 "" H 5800 2475 60  0000 C CNN
+	1    5800 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D18
+U 1 1 60F3261F
+P 4725 2925
+F 0 "D18" H 4597 2875 60  0000 R CNN
+F 1 "D" V 4875 2875 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4725 2925 60  0001 C CNN
+F 3 "" H 4725 2925 60  0000 C CNN
+	1    4725 2925
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D19
+U 1 1 60F32F0E
+P 6350 1600
+F 0 "D19" H 6222 1550 60  0000 R CNN
+F 1 "D" V 6500 1550 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 6350 1600 60  0001 C CNN
+F 3 "" H 6350 1600 60  0000 C CNN
+	1    6350 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D20
+U 1 1 60F3396C
+P 6350 2050
+F 0 "D20" H 6222 2000 60  0000 R CNN
+F 1 "D" V 6500 2000 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 6350 2050 60  0001 C CNN
+F 3 "" H 6350 2050 60  0000 C CNN
+	1    6350 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D21
+U 1 1 60F34354
+P 6350 2475
+F 0 "D21" H 6222 2425 60  0000 R CNN
+F 1 "D" V 6500 2425 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 6350 2475 60  0001 C CNN
+F 3 "" H 6350 2475 60  0000 C CNN
+	1    6350 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D22
+U 1 1 60F34C4E
+P 6350 2925
+F 0 "D22" H 6222 2875 60  0000 R CNN
+F 1 "D" V 6500 2875 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 6350 2925 60  0001 C CNN
+F 3 "" H 6350 2925 60  0000 C CNN
+	1    6350 2925
+	-1   0    0    1   
+$EndComp
+Text GLabel 3225 1075 1    50   Input ~ 0
+LCOL0
+Wire Wire Line
+	3225 1075 3225 1450
+Connection ~ 3225 1450
+Wire Wire Line
+	3225 1450 3225 1900
+Connection ~ 3225 1900
+Wire Wire Line
+	3225 1900 3225 2325
+Connection ~ 3225 2325
+Wire Wire Line
+	3225 2325 3225 2775
+Text GLabel 3775 1075 1    50   Input ~ 0
+LCOL1
+Text GLabel 4325 1075 1    50   Input ~ 0
+LCOL2
+Text GLabel 4875 1075 1    50   Input ~ 0
+LCOL3
+Text GLabel 5400 1075 1    50   Input ~ 0
+LCOL4
+Text GLabel 5950 1075 1    50   Input ~ 0
+LCOL5
+Wire Wire Line
+	3775 1075 3775 1450
+Connection ~ 3775 1450
+Wire Wire Line
+	3775 1450 3775 1900
+Connection ~ 3775 1900
+Wire Wire Line
+	3775 1900 3775 2325
+Connection ~ 3775 2325
+Wire Wire Line
+	3775 2325 3775 2775
+Wire Wire Line
+	4325 1075 4325 1450
+Connection ~ 4325 1450
+Wire Wire Line
+	4325 1450 4325 1900
+Connection ~ 4325 1900
+Wire Wire Line
+	4325 1900 4325 2325
+Wire Wire Line
+	4875 1075 4875 1450
+Connection ~ 4875 1450
+Wire Wire Line
+	4875 1450 4875 1900
+Connection ~ 4875 1900
+Wire Wire Line
+	4875 1900 4875 2325
+Wire Wire Line
+	5400 1075 5400 1450
+Connection ~ 5400 1450
+Wire Wire Line
+	5400 1450 5400 1900
+Connection ~ 5400 1900
+Wire Wire Line
+	5400 1900 5400 2325
+Wire Wire Line
+	5950 1075 5950 1450
+Connection ~ 5950 1450
+Wire Wire Line
+	5950 1450 5950 1900
+Connection ~ 5950 1900
+Wire Wire Line
+	5950 1900 5950 2325
+Connection ~ 5950 2325
+Wire Wire Line
+	5950 2325 5950 2775
+Text GLabel 6700 1650 2    50   Input ~ 0
+LROW0
+Text GLabel 6700 2100 2    50   Input ~ 0
+LROW1
+Text GLabel 6700 2525 2    50   Input ~ 0
+LROW2
+Wire Wire Line
+	6700 1650 6350 1650
+Connection ~ 4175 1650
+Wire Wire Line
+	4175 1650 3625 1650
+Connection ~ 4725 1650
+Wire Wire Line
+	4725 1650 4175 1650
+Connection ~ 5275 1650
+Wire Wire Line
+	5275 1650 4725 1650
+Connection ~ 5800 1650
+Wire Wire Line
+	5800 1650 5275 1650
+Connection ~ 6350 1650
+Wire Wire Line
+	6350 1650 5800 1650
+Wire Wire Line
+	6700 2100 6350 2100
+Connection ~ 4175 2100
+Wire Wire Line
+	4175 2100 3625 2100
+Connection ~ 4725 2100
+Wire Wire Line
+	4725 2100 4175 2100
+Connection ~ 5275 2100
+Wire Wire Line
+	5275 2100 4725 2100
+Connection ~ 5800 2100
+Wire Wire Line
+	5800 2100 5275 2100
+Connection ~ 6350 2100
+Wire Wire Line
+	6350 2100 5800 2100
+Wire Wire Line
+	6700 2525 6350 2525
+Connection ~ 4175 2525
+Wire Wire Line
+	4175 2525 3625 2525
+Connection ~ 4725 2525
+Wire Wire Line
+	4725 2525 4175 2525
+Connection ~ 5275 2525
+Wire Wire Line
+	5275 2525 4725 2525
+Connection ~ 5800 2525
+Wire Wire Line
+	5800 2525 5275 2525
+Connection ~ 6350 2525
+Wire Wire Line
+	6350 2525 5800 2525
+Wire Wire Line
+	6700 2975 6350 2975
+Connection ~ 4175 2975
+Wire Wire Line
+	4175 2975 3625 2975
+Connection ~ 6350 2975
+$Comp
+L SparkFun-PowerSymbols:GND #GND0101
+U 1 1 60EDBA22
+P 950 2700
+F 0 "#GND0101" H 1000 2650 45  0001 L BNN
+F 1 "GND" V 950 2573 45  0000 R CNN
+F 2 "" H 950 2600 60  0001 C CNN
+F 3 "" H 950 2600 60  0001 C CNN
+	1    950  2700
+	0    1    1    0   
+$EndComp
+Text GLabel 950  2800 0    50   Input ~ 0
+LSDA
+Text GLabel 950  2500 0    50   Input ~ 0
+LCOL0
+NoConn ~ 950  2400
+Text GLabel 950  3000 0    50   Input ~ 0
+LROW0
+Text GLabel 950  3200 0    50   Input ~ 0
+LROW1
+Text GLabel 950  3300 0    50   Input ~ 0
+LROW2
+Text GLabel 950  3400 0    50   Input ~ 0
+LROW3
+NoConn ~ 2350 3500
+NoConn ~ 2350 3400
+Text GLabel 2350 2900 2    50   Input ~ 0
+LCOL1
+Text GLabel 2350 3000 2    50   Input ~ 0
+LCOL2
+Text GLabel 2350 3100 2    50   Input ~ 0
+LCOL3
+Text GLabel 2350 3200 2    50   Input ~ 0
+LCOL4
+Text GLabel 2350 3300 2    50   Input ~ 0
+LCOL5
+Wire Wire Line
+	4325 2775 4325 2325
+Connection ~ 4325 2325
+Connection ~ 4725 2975
+Wire Wire Line
+	4725 2975 4175 2975
+Wire Wire Line
+	4725 2975 6350 2975
+NoConn ~ 2350 2600
+$Comp
+L keebio:ProMicro U2
+U 1 1 60ECDEAA
+P 1650 2950
+F 0 "U2" H 1650 3787 60  0000 C CNN
+F 1 "ProMicro" H 1650 3681 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro" V 2700 450 60  0001 C CNN
+F 3 "" V 2700 450 60  0001 C CNN
+	1    1650 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 1325 4100 0    50   Input ~ 0
+RSCL
+$Comp
+L keyboard_parts:R R3
+U 1 1 60F235CD
+P 1850 4150
+F 0 "R3" V 2058 4150 50  0000 C CNN
+F 1 "4.7k" V 1967 4150 50  0000 C CNN
+F 2 "Keebio-Parts:Resistor" H 1850 4150 60  0001 C CNN
+F 3 "" H 1850 4150 60  0000 C CNN
+	1    1850 4150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1325 4300 0    50   Input ~ 0
+RSDA
+$Comp
+L keyboard_parts:R R4
+U 1 1 60F235D8
+P 1850 4250
+F 0 "R4" V 1734 4250 50  0000 C CNN
+F 1 "4.7k" V 1643 4250 50  0000 C CNN
+F 2 "Keebio-Parts:Resistor" H 1850 4250 60  0001 C CNN
+F 3 "" H 1850 4250 60  0000 C CNN
+	1    1850 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 4200 1325 4200
+Wire Wire Line
+	2250 4300 1325 4300
+Wire Wire Line
+	2250 4300 2250 4250
+Wire Wire Line
+	2250 4250 2100 4250
+Wire Wire Line
+	1600 4250 1325 4250
+Wire Wire Line
+	1325 4250 1325 4200
+Connection ~ 1325 4200
+Wire Wire Line
+	2250 4100 1325 4100
+Wire Wire Line
+	1600 4150 1325 4150
+Wire Wire Line
+	1325 4150 1325 4200
+Wire Wire Line
+	2100 4150 2250 4150
+Wire Wire Line
+	2250 4150 2250 4100
+Connection ~ 2250 4300
+Connection ~ 2250 4100
+$Comp
+L keebio:TRRS U4
+U 1 1 60F235F0
+P 2600 4500
+F 0 "U4" H 2828 4803 60  0000 L CNN
+F 1 "TRRS" H 2828 4697 60  0000 L CNN
+F 2 "Keebio-Parts:TRRS-PJ-320D" H 2750 4500 60  0001 C CNN
+F 3 "" H 2750 4500 60  0001 C CNN
+	1    2600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:GND #GND0103
+U 1 1 60F235FA
+P 2250 4400
+F 0 "#GND0103" H 2300 4350 45  0001 L BNN
+F 1 "GND" H 2250 4230 45  0000 C CNN
+F 2 "" H 2250 4300 60  0001 C CNN
+F 3 "" H 2250 4300 60  0001 C CNN
+	1    2250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:5V #SUPPLY0103
+U 1 1 60F23604
+P 1050 4175
+F 0 "#SUPPLY0103" H 1100 4175 45  0001 L BNN
+F 1 "5V" H 1050 4451 45  0000 C CNN
+F 2 "XXX-00000" H 1050 4356 60  0000 C CNN
+F 3 "" H 1050 4175 60  0001 C CNN
+	1    1050 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1325 4200 1050 4200
+Wire Wire Line
+	1050 4200 1050 4175
+Text GLabel 925  5750 0    50   Input ~ 0
+RSCL
+Wire Wire Line
+	2325 5550 2375 5550
+NoConn ~ 2325 5250
+NoConn ~ 2325 5650
+NoConn ~ 925  6350
+NoConn ~ 925  5950
+NoConn ~ 925  5450
+$Comp
+L SparkFun-PowerSymbols:5V #SUPPLY0104
+U 1 1 60F23617
+P 2375 5550
+F 0 "#SUPPLY0104" H 2425 5550 45  0001 L BNN
+F 1 "5V" V 2322 5678 45  0000 L CNN
+F 2 "XXX-00000" V 2417 5678 60  0000 L CNN
+F 3 "" H 2375 5550 60  0001 C CNN
+	1    2375 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:GND #GND0105
+U 1 1 60F23621
+P 2325 5350
+F 0 "#GND0105" H 2375 5300 45  0001 L BNN
+F 1 "GND" V 2325 5222 45  0000 R CNN
+F 2 "" H 2325 5250 60  0001 C CNN
+F 3 "" H 2325 5250 60  0001 C CNN
+	1    2325 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CherryMX:CherryMX SW23
+U 1 1 60F2362B
+P 3400 4300
+F 0 "SW23" H 3400 4585 50  0000 C CNN
+F 1 "CherryMX" H 3400 4494 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3400 4325 50  0001 C CNN
+F 3 "" H 3400 4325 50  0001 C CNN
+	1    3400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW24
+U 1 1 60F23635
+P 3400 4750
+F 0 "SW24" H 3400 5035 50  0000 C CNN
+F 1 "CherryMX" H 3400 4944 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3400 4775 50  0001 C CNN
+F 3 "" H 3400 4775 50  0001 C CNN
+	1    3400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW25
+U 1 1 60F2363F
+P 3400 5175
+F 0 "SW25" H 3400 5460 50  0000 C CNN
+F 1 "CherryMX" H 3400 5369 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3400 5200 50  0001 C CNN
+F 3 "" H 3400 5200 50  0001 C CNN
+	1    3400 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW26
+U 1 1 60F23649
+P 3400 5625
+F 0 "SW26" H 3400 5910 50  0000 C CNN
+F 1 "CherryMX" H 3400 5819 50  0000 C CNN
+F 2 "CherryMX_PCB_StabWireBottom:CherryMX_2.00u_PCB_StabWireBottom" H 3400 5650 50  0001 C CNN
+F 3 "" H 3400 5650 50  0001 C CNN
+	1    3400 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW27
+U 1 1 60F23653
+P 3950 4300
+F 0 "SW27" H 3950 4585 50  0000 C CNN
+F 1 "CherryMX" H 3950 4494 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3950 4325 50  0001 C CNN
+F 3 "" H 3950 4325 50  0001 C CNN
+	1    3950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW28
+U 1 1 60F2365D
+P 3950 4750
+F 0 "SW28" H 3950 5035 50  0000 C CNN
+F 1 "CherryMX" H 3950 4944 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3950 4775 50  0001 C CNN
+F 3 "" H 3950 4775 50  0001 C CNN
+	1    3950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW29
+U 1 1 60F23667
+P 3950 5175
+F 0 "SW29" H 3950 5460 50  0000 C CNN
+F 1 "CherryMX" H 3950 5369 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 3950 5200 50  0001 C CNN
+F 3 "" H 3950 5200 50  0001 C CNN
+	1    3950 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW30
+U 1 1 60F23671
+P 3950 5625
+F 0 "SW30" H 3950 5910 50  0000 C CNN
+F 1 "CherryMX" H 3950 5819 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.50u_PCB" H 3950 5650 50  0001 C CNN
+F 3 "" H 3950 5650 50  0001 C CNN
+	1    3950 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW31
+U 1 1 60F2367B
+P 4500 4300
+F 0 "SW31" H 4500 4585 50  0000 C CNN
+F 1 "CherryMX" H 4500 4494 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 4500 4325 50  0001 C CNN
+F 3 "" H 4500 4325 50  0001 C CNN
+	1    4500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW32
+U 1 1 60F23685
+P 4500 4750
+F 0 "SW32" H 4500 5035 50  0000 C CNN
+F 1 "CherryMX" H 4500 4944 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 4500 4775 50  0001 C CNN
+F 3 "" H 4500 4775 50  0001 C CNN
+	1    4500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW33
+U 1 1 60F2368F
+P 4500 5175
+F 0 "SW33" H 4500 5460 50  0000 C CNN
+F 1 "CherryMX" H 4500 5369 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 4500 5200 50  0001 C CNN
+F 3 "" H 4500 5200 50  0001 C CNN
+	1    4500 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW35
+U 1 1 60F23699
+P 5050 4300
+F 0 "SW35" H 5050 4585 50  0000 C CNN
+F 1 "CherryMX" H 5050 4494 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5050 4325 50  0001 C CNN
+F 3 "" H 5050 4325 50  0001 C CNN
+	1    5050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW36
+U 1 1 60F236A3
+P 5050 4750
+F 0 "SW36" H 5050 5035 50  0000 C CNN
+F 1 "CherryMX" H 5050 4944 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5050 4775 50  0001 C CNN
+F 3 "" H 5050 4775 50  0001 C CNN
+	1    5050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW37
+U 1 1 60F236AD
+P 5050 5175
+F 0 "SW37" H 5050 5460 50  0000 C CNN
+F 1 "CherryMX" H 5050 5369 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5050 5200 50  0001 C CNN
+F 3 "" H 5050 5200 50  0001 C CNN
+	1    5050 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW38
+U 1 1 60F236B7
+P 5575 4300
+F 0 "SW38" H 5575 4585 50  0000 C CNN
+F 1 "CherryMX" H 5575 4494 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5575 4325 50  0001 C CNN
+F 3 "" H 5575 4325 50  0001 C CNN
+	1    5575 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW39
+U 1 1 60F236C1
+P 5575 4750
+F 0 "SW39" H 5575 5035 50  0000 C CNN
+F 1 "CherryMX" H 5575 4944 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5575 4775 50  0001 C CNN
+F 3 "" H 5575 4775 50  0001 C CNN
+	1    5575 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW34
+U 1 1 60F236D5
+P 5050 5625
+F 0 "SW34" H 5050 5910 50  0000 C CNN
+F 1 "CherryMX" H 5050 5819 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5050 5650 50  0001 C CNN
+F 3 "" H 5050 5650 50  0001 C CNN
+	1    5050 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW41
+U 1 1 60F236DF
+P 6125 4300
+F 0 "SW41" H 6125 4585 50  0000 C CNN
+F 1 "CherryMX" H 6125 4494 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.75u_PCB" H 6125 4325 50  0001 C CNN
+F 3 "" H 6125 4325 50  0001 C CNN
+	1    6125 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW42
+U 1 1 60F236E9
+P 6125 4750
+F 0 "SW42" H 6125 5035 50  0000 C CNN
+F 1 "CherryMX" H 6125 4944 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.50u_PCB" H 6125 4775 50  0001 C CNN
+F 3 "" H 6125 4775 50  0001 C CNN
+	1    6125 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW43
+U 1 1 60F236F3
+P 6125 5175
+F 0 "SW43" H 6125 5460 50  0000 C CNN
+F 1 "CherryMX" H 6125 5369 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 6125 5200 50  0001 C CNN
+F 3 "" H 6125 5200 50  0001 C CNN
+	1    6125 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW44
+U 1 1 60F236FD
+P 6125 5625
+F 0 "SW44" H 6125 5910 50  0000 C CNN
+F 1 "CherryMX" H 6125 5819 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 6125 5650 50  0001 C CNN
+F 3 "" H 6125 5650 50  0001 C CNN
+	1    6125 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D23
+U 1 1 60F23707
+P 3600 4450
+F 0 "D23" H 3472 4400 60  0000 R CNN
+F 1 "D" V 3750 4400 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 3600 4450 60  0001 C CNN
+F 3 "" H 3600 4450 60  0000 C CNN
+	1    3600 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D24
+U 1 1 60F23711
+P 3600 4900
+F 0 "D24" H 3472 4850 60  0000 R CNN
+F 1 "D" V 3750 4850 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 3600 4900 60  0001 C CNN
+F 3 "" H 3600 4900 60  0000 C CNN
+	1    3600 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D25
+U 1 1 60F2371B
+P 3600 5325
+F 0 "D25" H 3472 5275 60  0000 R CNN
+F 1 "D" V 3750 5275 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 3600 5325 60  0001 C CNN
+F 3 "" H 3600 5325 60  0000 C CNN
+	1    3600 5325
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D26
+U 1 1 60F23725
+P 3600 5775
+F 0 "D26" H 3472 5725 60  0000 R CNN
+F 1 "D" V 3750 5725 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 3600 5775 60  0001 C CNN
+F 3 "" H 3600 5775 60  0000 C CNN
+	1    3600 5775
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D27
+U 1 1 60F2372F
+P 4150 4450
+F 0 "D27" H 4022 4400 60  0000 R CNN
+F 1 "D" V 4300 4400 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4150 4450 60  0001 C CNN
+F 3 "" H 4150 4450 60  0000 C CNN
+	1    4150 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D28
+U 1 1 60F23739
+P 4150 4900
+F 0 "D28" H 4022 4850 60  0000 R CNN
+F 1 "D" V 4300 4850 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4150 4900 60  0001 C CNN
+F 3 "" H 4150 4900 60  0000 C CNN
+	1    4150 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D29
+U 1 1 60F23743
+P 4150 5325
+F 0 "D29" H 4022 5275 60  0000 R CNN
+F 1 "D" V 4300 5275 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4150 5325 60  0001 C CNN
+F 3 "" H 4150 5325 60  0000 C CNN
+	1    4150 5325
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D30
+U 1 1 60F2374D
+P 4150 5775
+F 0 "D30" H 4022 5725 60  0000 R CNN
+F 1 "D" V 4300 5725 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4150 5775 60  0001 C CNN
+F 3 "" H 4150 5775 60  0000 C CNN
+	1    4150 5775
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D31
+U 1 1 60F23757
+P 4700 4450
+F 0 "D31" H 4572 4400 60  0000 R CNN
+F 1 "D" V 4850 4400 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4700 4450 60  0001 C CNN
+F 3 "" H 4700 4450 60  0000 C CNN
+	1    4700 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D32
+U 1 1 60F23761
+P 4700 4900
+F 0 "D32" H 4572 4850 60  0000 R CNN
+F 1 "D" V 4850 4850 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4700 4900 60  0001 C CNN
+F 3 "" H 4700 4900 60  0000 C CNN
+	1    4700 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D33
+U 1 1 60F2376B
+P 4700 5325
+F 0 "D33" H 4572 5275 60  0000 R CNN
+F 1 "D" V 4850 5275 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 4700 5325 60  0001 C CNN
+F 3 "" H 4700 5325 60  0000 C CNN
+	1    4700 5325
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D35
+U 1 1 60F23775
+P 5250 4450
+F 0 "D35" H 5122 4400 60  0000 R CNN
+F 1 "D" V 5400 4400 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5250 4450 60  0001 C CNN
+F 3 "" H 5250 4450 60  0000 C CNN
+	1    5250 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D36
+U 1 1 60F2377F
+P 5250 4900
+F 0 "D36" H 5122 4850 60  0000 R CNN
+F 1 "D" V 5400 4850 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5250 4900 60  0001 C CNN
+F 3 "" H 5250 4900 60  0000 C CNN
+	1    5250 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D37
+U 1 1 60F23789
+P 5250 5325
+F 0 "D37" H 5122 5275 60  0000 R CNN
+F 1 "D" V 5400 5275 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5250 5325 60  0001 C CNN
+F 3 "" H 5250 5325 60  0000 C CNN
+	1    5250 5325
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D38
+U 1 1 60F23793
+P 5775 4450
+F 0 "D38" H 5647 4400 60  0000 R CNN
+F 1 "D" V 5925 4400 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5775 4450 60  0001 C CNN
+F 3 "" H 5775 4450 60  0000 C CNN
+	1    5775 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D39
+U 1 1 60F2379D
+P 5775 4900
+F 0 "D39" H 5647 4850 60  0000 R CNN
+F 1 "D" V 5925 4850 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5775 4900 60  0001 C CNN
+F 3 "" H 5775 4900 60  0000 C CNN
+	1    5775 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D34
+U 1 1 60F237B1
+P 5250 5775
+F 0 "D34" H 5122 5725 60  0000 R CNN
+F 1 "D" V 5400 5725 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5250 5775 60  0001 C CNN
+F 3 "" H 5250 5775 60  0000 C CNN
+	1    5250 5775
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D41
+U 1 1 60F237BB
+P 6325 4450
+F 0 "D41" H 6197 4400 60  0000 R CNN
+F 1 "D" V 6475 4400 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 6325 4450 60  0001 C CNN
+F 3 "" H 6325 4450 60  0000 C CNN
+	1    6325 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D42
+U 1 1 60F237C5
+P 6325 4900
+F 0 "D42" H 6197 4850 60  0000 R CNN
+F 1 "D" V 6475 4850 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 6325 4900 60  0001 C CNN
+F 3 "" H 6325 4900 60  0000 C CNN
+	1    6325 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D43
+U 1 1 60F237CF
+P 6325 5325
+F 0 "D43" H 6197 5275 60  0000 R CNN
+F 1 "D" V 6475 5275 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 6325 5325 60  0001 C CNN
+F 3 "" H 6325 5325 60  0000 C CNN
+	1    6325 5325
+	-1   0    0    1   
+$EndComp
+$Comp
+L keyboard_parts:D D44
+U 1 1 60F237D9
+P 6325 5775
+F 0 "D44" H 6197 5725 60  0000 R CNN
+F 1 "D" V 6475 5725 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 6325 5775 60  0001 C CNN
+F 3 "" H 6325 5775 60  0000 C CNN
+	1    6325 5775
+	-1   0    0    1   
+$EndComp
+Text GLabel 3200 3925 1    50   Input ~ 0
+RCOL0
+Wire Wire Line
+	3200 3925 3200 4300
+Connection ~ 3200 4300
+Wire Wire Line
+	3200 4300 3200 4750
+Connection ~ 3200 4750
+Wire Wire Line
+	3200 4750 3200 5175
+Connection ~ 3200 5175
+Wire Wire Line
+	3200 5175 3200 5625
+Text GLabel 3750 3925 1    50   Input ~ 0
+RCOL1
+Text GLabel 4300 3925 1    50   Input ~ 0
+RCOL2
+Text GLabel 4850 3925 1    50   Input ~ 0
+RCOL3
+Text GLabel 5375 3925 1    50   Input ~ 0
+RCOL4
+Text GLabel 5925 3925 1    50   Input ~ 0
+RCOL5
+Wire Wire Line
+	3750 3925 3750 4300
+Connection ~ 3750 4300
+Wire Wire Line
+	3750 4300 3750 4750
+Connection ~ 3750 4750
+Wire Wire Line
+	3750 4750 3750 5175
+Connection ~ 3750 5175
+Wire Wire Line
+	3750 5175 3750 5625
+Wire Wire Line
+	4300 3925 4300 4300
+Connection ~ 4300 4300
+Wire Wire Line
+	4300 4300 4300 4750
+Connection ~ 4300 4750
+Wire Wire Line
+	4300 4750 4300 5175
+Wire Wire Line
+	4850 3925 4850 4300
+Connection ~ 4850 4300
+Wire Wire Line
+	4850 4300 4850 4750
+Connection ~ 4850 4750
+Wire Wire Line
+	4850 4750 4850 5175
+Wire Wire Line
+	5375 3925 5375 4300
+Connection ~ 5375 4300
+Wire Wire Line
+	5375 4300 5375 4750
+Wire Wire Line
+	5925 3925 5925 4300
+Connection ~ 5925 4300
+Wire Wire Line
+	5925 4300 5925 4750
+Connection ~ 5925 4750
+Wire Wire Line
+	5925 4750 5925 5175
+Connection ~ 5925 5175
+Wire Wire Line
+	5925 5175 5925 5625
+Text GLabel 6675 4500 2    50   Input ~ 0
+RROW0
+Text GLabel 6675 4950 2    50   Input ~ 0
+RROW1
+Text GLabel 6675 5375 2    50   Input ~ 0
+RROW2
+Text GLabel 6675 5825 2    50   Input ~ 0
+RROW3
+Wire Wire Line
+	6675 4500 6325 4500
+Connection ~ 4150 4500
+Wire Wire Line
+	4150 4500 3600 4500
+Connection ~ 4700 4500
+Wire Wire Line
+	4700 4500 4150 4500
+Connection ~ 5250 4500
+Wire Wire Line
+	5250 4500 4700 4500
+Connection ~ 5775 4500
+Wire Wire Line
+	5775 4500 5250 4500
+Connection ~ 6325 4500
+Wire Wire Line
+	6325 4500 5775 4500
+Wire Wire Line
+	6675 4950 6325 4950
+Connection ~ 4150 4950
+Wire Wire Line
+	4150 4950 3600 4950
+Connection ~ 4700 4950
+Wire Wire Line
+	4700 4950 4150 4950
+Connection ~ 5250 4950
+Wire Wire Line
+	5250 4950 4700 4950
+Connection ~ 5775 4950
+Wire Wire Line
+	5775 4950 5250 4950
+Connection ~ 6325 4950
+Wire Wire Line
+	6325 4950 5775 4950
+Wire Wire Line
+	6675 5375 6325 5375
+Connection ~ 4150 5375
+Wire Wire Line
+	4150 5375 3600 5375
+Connection ~ 4700 5375
+Wire Wire Line
+	4700 5375 4150 5375
+Wire Wire Line
+	5250 5375 4700 5375
+Connection ~ 6325 5375
+Wire Wire Line
+	6675 5825 6325 5825
+Connection ~ 6325 5825
+$Comp
+L SparkFun-PowerSymbols:GND #GND0106
+U 1 1 60F23836
+P 925 5550
+F 0 "#GND0106" H 975 5500 45  0001 L BNN
+F 1 "GND" V 925 5423 45  0000 R CNN
+F 2 "" H 925 5450 60  0001 C CNN
+F 3 "" H 925 5450 60  0001 C CNN
+	1    925  5550
+	0    1    1    0   
+$EndComp
+Text GLabel 925  5650 0    50   Input ~ 0
+RSDA
+Text GLabel 925  5350 0    50   Input ~ 0
+RCOL0
+NoConn ~ 925  5250
+Text GLabel 925  5850 0    50   Input ~ 0
+RROW0
+Text GLabel 925  6050 0    50   Input ~ 0
+RROW1
+Text GLabel 925  6150 0    50   Input ~ 0
+RROW2
+Text GLabel 925  6250 0    50   Input ~ 0
+RROW3
+NoConn ~ 2325 6350
+NoConn ~ 2325 6250
+Text GLabel 2325 5750 2    50   Input ~ 0
+RCOL1
+Text GLabel 2325 5850 2    50   Input ~ 0
+RCOL2
+Text GLabel 2325 5950 2    50   Input ~ 0
+RCOL3
+Text GLabel 2325 6050 2    50   Input ~ 0
+RCOL4
+Text GLabel 2325 6150 2    50   Input ~ 0
+RCOL5
+Wire Wire Line
+	4850 5625 4850 5175
+NoConn ~ 2325 5450
+$Comp
+L keebio:ProMicro U3
+U 1 1 60F23854
+P 1625 5800
+F 0 "U3" H 1625 6637 60  0000 C CNN
+F 1 "ProMicro" H 1625 6531 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro" V 2675 3300 60  0001 C CNN
+F 3 "" V 2675 3300 60  0001 C CNN
+	1    1625 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 5375 5775 5375
+Connection ~ 5775 5375
+Connection ~ 5250 5375
+Connection ~ 5375 4750
+$Comp
+L keyboard_parts:D D40
+U 1 1 60F237A7
+P 5775 5325
+F 0 "D40" H 5647 5275 60  0000 R CNN
+F 1 "D" V 5925 5275 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5775 5325 60  0001 C CNN
+F 3 "" H 5775 5325 60  0000 C CNN
+	1    5775 5325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5775 5375 5250 5375
+Wire Wire Line
+	5375 4750 5375 5175
+Text GLabel 6700 2975 2    50   Input ~ 0
+LROW3
+$Comp
+L CherryMX:CherryMX SW40
+U 1 1 60F236CB
+P 5575 5175
+F 0 "SW40" H 5575 5460 50  0000 C CNN
+F 1 "CherryMX" H 5575 5369 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5575 5200 50  0001 C CNN
+F 3 "" H 5575 5200 50  0001 C CNN
+	1    5575 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CherryMX:CherryMX SW45
+U 1 1 60FDA5D0
+P 5575 5625
+F 0 "SW45" H 5575 5910 50  0000 C CNN
+F 1 "CherryMX" H 5575 5819 50  0000 C CNN
+F 2 "CherryMX_PCB:CherryMX_1.00u_PCB" H 5575 5650 50  0001 C CNN
+F 3 "" H 5575 5650 50  0001 C CNN
+	1    5575 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D45
+U 1 1 60FDA5DA
+P 5775 5775
+F 0 "D45" H 5647 5725 60  0000 R CNN
+F 1 "D" V 5925 5725 60  0001 C CNN
+F 2 "Keebio-Parts:Diode" H 5775 5775 60  0001 C CNN
+F 3 "" H 5775 5775 60  0000 C CNN
+	1    5775 5775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5375 5175 5375 5625
+Connection ~ 5375 5175
+Connection ~ 5775 5825
+Wire Wire Line
+	5775 5825 6325 5825
+Connection ~ 4850 5175
+Connection ~ 4150 5825
+Wire Wire Line
+	4150 5825 5250 5825
+Wire Wire Line
+	3600 5825 4150 5825
+Connection ~ 5250 5825
+Wire Wire Line
+	5250 5825 5775 5825
+$EndSCHEMATC
